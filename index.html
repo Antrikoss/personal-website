@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Andreas Theodosis — ECE student, building software and hardware</title>
+<meta name="description" content="Andreas Theodosis. Electrical and Computer Engineering student at NTUA, building software, systems, and hardware projects.">
+<meta name="theme-color" content="#faf9f9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#16141a" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<div class="page" id="top">
+
+  <header class="site-header">
+    <div class="header-top">
+      <h1>Andreas Theodosis</h1>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark theme" data-theme-toggle>
+        <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <circle cx="12" cy="12" r="4.2"/>
+          <path d="M12 2.5v2.4M12 19.1v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/>
+        </svg>
+        <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5Z"/>
+        </svg>
+      </button>
+    </div>
+
+    <p class="tagline">ECE student at NTUA, building software, systems, and hardware.</p>
+    <p class="location">Athens, Greece.</p>
+
+    <nav aria-label="Primary" class="site-nav">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+
+    <section id="about" class="section" aria-labelledby="about-title">
+      <h2 id="about-title">About</h2>
+      <p class="about-text">
+        I'm an Electrical and Computer Engineering student at NTUA, passionate about software and AI.
+        I like building things, learning how computers work end to end, and turning ideas into products.
+        Right now I'm looking to join a technical team where I can contribute, learn from experienced
+        engineers, and get hands-on experience building real-world software.
+      </p>
+    </section>
+
+    <section id="experience" class="section" aria-labelledby="experience-title">
+      <h2 id="experience-title">Experience</h2>
+
+      <div class="entry-list">
+
+        <article class="entry">
+          <div class="entry-head">
+            <h3>Co-Founder &amp; Engineer, zantesnaps</h3>
+            <p class="entry-period">Jan 2026 — Present</p>
+          </div>
+          <p class="entry-body">
+            Designing and building an end-to-end photobooth product in Zakynthos with a three-person team,
+            spanning both software and hardware. Built an Arduino-based interface that detects successful
+            payments, and Python and C++ code that talks to the microcontroller and starts sessions over
+            HTTPS. Automated the full startup sequence with a script that launches every system component
+            together.
+          </p>
+          <div class="pipeline" role="img" aria-label="Process: problem, then hardware interface, then software integration, then automation, then live in Zakynthos">
+            <span>problem</span><span class="pipeline-arrow" aria-hidden="true">→</span>
+            <span>hardware interface</span><span class="pipeline-arrow" aria-hidden="true">→</span>
+            <span>software integration</span><span class="pipeline-arrow" aria-hidden="true">→</span>
+            <span>automation</span><span class="pipeline-arrow" aria-hidden="true">→</span>
+            <span>live in Zakynthos</span>
+          </div>
+          <ul class="entry-tags" aria-label="Areas involved">
+            <li>hardware</li><li>systems</li><li>software</li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <div class="entry-head">
+            <h3>Hackathon, Engineering the World 2026</h3>
+            <p class="entry-period">Apr 2026</p>
+          </div>
+          <p class="entry-body">
+            Joined a newly formed team to build an end-to-end predictive modeling system for the energy
+            sector: forecasting day-ahead electricity prices at 15-minute intervals, then using those
+            forecasts to schedule battery charging and discharging to minimize cost.
+          </p>
+          <ul class="entry-tags" aria-label="Areas involved">
+            <li>software</li><li>systems</li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <div class="entry-head">
+            <h3>Hackathon, NTUA</h3>
+            <p class="entry-period">Feb 2026</p>
+          </div>
+          <p class="entry-body">
+            Collaborated on a wildfire-prediction model and a simple interface for it, at the first
+            hackathon run by NTUA's Innovation and Entrepreneurship Unit — first hands-on experience
+            building software as part of a team.
+          </p>
+          <ul class="entry-tags" aria-label="Areas involved">
+            <li>software</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="projects" class="section" aria-labelledby="projects-title">
+      <h2 id="projects-title">Projects</h2>
+
+      <div class="entry-list">
+
+        <article class="entry">
+          <h3>Customer Churn Predictor</h3>
+          <p class="entry-body">
+            An end-to-end machine learning pipeline predicting customer churn on the Telco Customer Churn
+            dataset. Trained and compared Logistic Regression and Random Forest models, and used
+            Matplotlib to build ROC curves for evaluation.
+          </p>
+          <ul class="project-links">
+            <li><a href="https://github.com/Antrikoss/Python-ML" target="_blank" rel="noopener noreferrer">Source<span class="ext-icon" aria-hidden="true">&nearr;</span></a></li>
+          </ul>
+          <ul class="entry-tags" aria-label="Stack">
+            <li>Python</li><li>scikit-learn</li><li>Matplotlib</li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <h3>CryptoSpot</h3>
+          <p class="entry-body">
+            A full-stack cryptocurrency tracker. Users register and follow the coins they care about; the
+            backend handles accounts and portfolio storage.
+          </p>
+          <ul class="project-links">
+            <li><a href="https://github.com/Antrikoss/CryptoSpot" target="_blank" rel="noopener noreferrer">Source<span class="ext-icon" aria-hidden="true">&nearr;</span></a></li>
+          </ul>
+          <ul class="entry-tags" aria-label="Stack">
+            <li>Flask</li><li>SQLite</li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <h3>Webal — CS50x Final Project</h3>
+          <p class="entry-body">
+            A weather-forecasting web app: search a city, pull live data from an external API, and see the
+            forecast. Built as the final project for Harvard's CS50x.
+          </p>
+          <ul class="project-links">
+            <li><a href="https://github.com/Antrikoss/CS50xProject" target="_blank" rel="noopener noreferrer">Source<span class="ext-icon" aria-hidden="true">&nearr;</span></a></li>
+          </ul>
+          <ul class="entry-tags" aria-label="Stack">
+            <li>Flask</li><li>JSON API</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="achievements" class="section" aria-labelledby="achievements-title">
+      <h2 id="achievements-title">Achievements</h2>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3>Philoxenia — Hustle Hours</h3>
+          <p class="entry-period">Selected participant, September 2026</p>
+        </div>
+        <p class="entry-meta">San Francisco, CA</p>
+        <p class="entry-body">
+          Selected for Philoxenia, a San Francisco builder program run by Hustle Hours, from around 1,000
+          applicants (~2% acceptance).
+        </p>
+        <p class="entry-body">
+          A two-week immersive program connecting Greek builders with San Francisco's tech, startup, and
+          investor ecosystem.
+        </p>
+      </article>
+    </section>
+
+    <section id="education" class="section" aria-labelledby="education-title">
+      <h2 id="education-title">Education</h2>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3>Electrical and Computer Engineering</h3>
+          <p class="entry-period">Sep 2025 — Present</p>
+        </div>
+        <p class="entry-meta">National Technical University of Athens</p>
+        <p class="entry-body">Relevant coursework: Computer Programming, Programming Techniques.</p>
+      </article>
+
+      <h3 class="subsection-title">Certifications</h3>
+      <ul class="cert-list">
+        <li>
+          <span class="cert-name">CS50: Introduction to Computer Science</span>
+          <span class="cert-issuer">Harvard, online</span>
+        </li>
+        <li>
+          <span class="cert-name">CS50: Introduction to Artificial Intelligence with Python</span>
+          <span class="cert-issuer">Harvard, online</span>
+        </li>
+        <li>
+          <span class="cert-name">English — B2 (CEFR)</span>
+          <span class="cert-issuer">ECCE, Michigan Language Assessment, 2022</span>
+        </li>
+      </ul>
+
+      <h3 class="subsection-title">Technical skills</h3>
+      <dl class="skills-list">
+        <div class="skills-row">
+          <dt>Languages</dt>
+          <dd>Python, C/C++, JavaScript, SQL, HTML5, CSS</dd>
+        </div>
+        <div class="skills-row">
+          <dt>Developer tools</dt>
+          <dd>Git, GitHub, Supabase, Vercel</dd>
+        </div>
+        <div class="skills-row">
+          <dt>Frameworks</dt>
+          <dd>Flask, Django, React.js, Next.js, SQLite, PostgreSQL</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <p class="contact-intro">
+        Building something interesting, hiring for an engineering role,  or want to talk through a
+        technical problem? I'd like to hear about it.
+      </p>
+
+      <div class="contact-email-row">
+        <p class="contact-email">
+          <a href="mailto:andrewtheodoses@gmail.com">andrewtheodoses@gmail.com</a>
+        </p>
+        <button type="button" class="copy-email-button" data-copy-email aria-label="Copy email address">
+          <svg class="icon icon-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <rect x="9" y="9" width="11" height="11" rx="1.4"/>
+            <path d="M5 15V5.6C5 5 5.6 4.5 6.2 4.5H15"/>
+          </svg>
+          <svg class="icon icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M4.5 12.5l5 5 10-11"/>
+          </svg>
+        </button>
+      </div>
+      <p class="copy-status" role="status" aria-live="polite"></p>
+
+      <ul class="contact-links">
+        <li><a href="https://www.linkedin.com/in/andrew-theodosis" target="_blank" rel="noopener noreferrer">LinkedIn<span class="ext-icon" aria-hidden="true">&nearr;</span></a></li>
+        <li><a href="https://github.com/Antrikoss" target="_blank" rel="noopener noreferrer">GitHub<span class="ext-icon" aria-hidden="true">&nearr;</span></a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Andreas Theodosis</p>
+    <a href="#top">Back to top<span aria-hidden="true"> ↑</span></a>
+  </footer>
+
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
